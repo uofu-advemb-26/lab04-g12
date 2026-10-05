@@ -1,5 +1,5 @@
 # This is the main binary. List your C files here.
-add_executable(hello_freertos hello_freertos.c)
+add_executable(hello_freertos hello_freertos.c signal.c)
 
 pico_set_program_name(hello_freertos "test")
 pico_set_program_version(hello_freertos "0.1")
