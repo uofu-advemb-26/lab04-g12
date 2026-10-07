@@ -22,5 +22,5 @@ BaseType_t signal_request_calculate(SemaphoreHandle_t request,
   // send ready signal (give request semaphore)
   xSemaphoreGive(request);
   // wait for response
-  return xSemaphoreTake(response, portMAX_DELAY);
+  return xSemaphoreTake(response, (TickType_t)500);
 }
