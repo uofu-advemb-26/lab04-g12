@@ -51,6 +51,11 @@ add_custom_target(
   DEPENDS mytest)
 
 add_custom_target(
+  flash_lab4_test_fifo
+  ${PICOTOOL} load -f $<TARGET_FILE:lab4_test_fifo>
+  DEPENDS lab4_test_fifo)
+
+add_custom_target(
   flash_test_signal
   ${PICOTOOL} load -f $<TARGET_FILE:lab4_test_signal>
   DEPENDS lab4_test_signal)
